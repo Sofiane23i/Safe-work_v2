@@ -13,6 +13,11 @@ public class CanvasBtnActions : MonoBehaviour
    public GameObject button2s1v;
     public GameObject button2s2v;
 
+     public GameObject button2s1f;
+    public GameObject button2s2f;
+     public GameObject button2s3f;
+    public GameObject button2s4f;
+
     static private GameObject CanvasChris;
     static private GameObject Wheelout;
     static private GameObject CanvasTMSChris;
@@ -103,6 +108,8 @@ public class CanvasBtnActions : MonoBehaviour
     public GameObject indice2accueilv;
     static private bool indice2accueilActivev = false;
 
+    public GameObject indice1accueilf;
+    static private bool indice1accueilActivef = false;
 
     public GameObject indice1accueils2;
     static private bool indice1accueilActives2 = false;
@@ -260,6 +267,14 @@ public class CanvasBtnActions : MonoBehaviour
         DialogChris1.enableInteraction = false;
     }
 
+    public void CloseCanvasChrisf1()
+    {
+
+        CanvasTMSChris = GameObject.Find("CanvasChrisf1");
+        CanvasTMSChris.SetActive(false);
+        DialogChris1.enableInteraction = false;
+    }
+
     
 
     public void CloseCanvasDidier()
@@ -274,6 +289,14 @@ public class CanvasBtnActions : MonoBehaviour
     {
 
         CanvasOrdiChris = GameObject.Find("CanvasDidierv1");
+        CanvasOrdiChris.SetActive(false);
+        DialogChris1.enableInteraction = false;
+    }
+
+    public void CloseCanvasDidierf1()
+    {
+
+        CanvasOrdiChris = GameObject.Find("CanvasDidierf");
         CanvasOrdiChris.SetActive(false);
         DialogChris1.enableInteraction = false;
     }
@@ -584,6 +607,47 @@ public class CanvasBtnActions : MonoBehaviour
         if (indice1accueilActive & indice2accueilActive & indice3accueilActive)
         {
             button2s1.SetActive(true);
+        }
+
+
+
+        //Carnet1 = GameObject.Find("carnet1");
+        //Carnet1.SetActive(false);
+        //Carnet1.GetComponent<Image>().color = new Color32(255, 158, 36, 200);
+    }
+
+
+  public void SaveObjectCarnetf1()
+    {
+
+        Debug.Log("here");
+        Debug.Log(indice1accueilActivev);
+        Debug.Log(indice2accueilActivev);
+
+        SaveBtnChrisTms = GameObject.Find("ButtonSaveChrisTMSf");
+        SaveBtnChrisTms.SetActive(false);
+
+        
+
+        if (indice1accueilActivef == false)
+        {
+
+            //indice1accueil = GameObject.Find("indice1accueil");
+            //indice1accueil.GetComponent<Image>().color = new Color32(255, 158, 36, 200);
+
+            Image indice2accueil2 = indice1accueilf.GetComponent<Image>();
+            indice2accueil2.GetComponent<Image>().color = new Color32(255, 158, 36, 200);
+            
+
+            //Carnet1.GetComponent<Image>().color = new Color32(255, 158, 36, 200);
+            //imageCarnet1.GetComponent<Image>().color = new Color32(255, 255, 36, 200);
+            //textCarnet1.GetComponent<TextMeshProUGUI>().text = "Hello World";
+
+            indice1accueilActivef = true;
+      
+            
+        
+            button2s1f.SetActive(true);
         }
 
 

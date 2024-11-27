@@ -17,6 +17,9 @@ public class CameraSalle : MonoBehaviour
   public GameObject indice1accueilv;
   public GameObject indice2accueilv;
 
+  public GameObject indice1accueilf;
+  public GameObject indice2accueilf;
+
   
   public GameObject indice1accueils2;
   public GameObject indice2accueils2;
@@ -37,6 +40,11 @@ public class CameraSalle : MonoBehaviour
   public GameObject button2s2v;
   public GameObject button2s3;
 
+    public GameObject button2s1f;
+    public GameObject button2s2f;
+     public GameObject button2s3f;
+    public GameObject button2s4f;
+
   public GameObject CanvasStart;
   public GameObject CanvasAcceuil;
   public GameObject CanvasAcceuilv;
@@ -53,6 +61,8 @@ public class CameraSalle : MonoBehaviour
    public GameObject CanvasDidier1;
    public GameObject CanvasChrisv1;
    public GameObject CanvasDidierv1;
+   public GameObject CanvasChrisf1;
+   public GameObject CanvasDidierf1;
 
   public GameObject CanvasChris2;
    public GameObject CanvasDidier2;
@@ -88,6 +98,9 @@ public class CameraSalle : MonoBehaviour
 
   public GameObject Chrisv1;
   public GameObject Didierv1;
+
+  public GameObject Chrisf1;
+  public GameObject Didierf1;
 
   public GameObject Chrisv2;
   public GameObject Didierv2;
@@ -161,6 +174,9 @@ public class CameraSalle : MonoBehaviour
     indice1accueilv.SetActive(false);
     indice2accueilv.SetActive(false);
 
+    indice1accueilf.SetActive(false);
+    indice2accueilf.SetActive(false);
+
     indice1accueils2.SetActive(false);
     indice2accueils2.SetActive(false);
     indice3accueils2.SetActive(false);
@@ -178,6 +194,11 @@ public class CameraSalle : MonoBehaviour
 
     button2s1v.SetActive(false);
     button2s2v.SetActive(false);
+
+    button2s1f.SetActive(false);
+    button2s2f.SetActive(false);
+    button2s3f.SetActive(false);
+    button2s4f.SetActive(false);
 
     PauseAccueilPanel.SetActive(false);
 
@@ -248,8 +269,8 @@ public class CameraSalle : MonoBehaviour
     indice1accueilv.SetActive(false);
     indice2accueilv.SetActive(false);
 
-
-   
+    indice1accueilf.SetActive(false);
+   indice2accueilf.SetActive(false);
 
     button2s1.SetActive(false);
     button2s2.SetActive(false);
@@ -458,7 +479,14 @@ if(salle == 5){
     Camera.main.transform.position = cameraSalle1.transform.position;
 
    
+    button2s1f.SetActive(false);
+    button2s2f.SetActive(false);
+    button2s3f.SetActive(false);
+    button2s4f.SetActive(false);
 
+
+    indice1accueilf.SetActive(true);
+     indice2accueilf.SetActive(false);
   
   
   }
@@ -514,6 +542,9 @@ if(salle == 5){
 
     CanvasChrisv1.SetActive(false);
     CanvasDidierv1.SetActive(false);
+
+    CanvasChrisf1.SetActive(false);
+    CanvasDidierf1.SetActive(false);
 
     CanvasChrisv2.SetActive(false);
     CanvasDidierv2.SetActive(false);

@@ -132,6 +132,7 @@
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark01.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TextMeshSpawner.cs" />
     <Compile Include="Assets/Scripts/DialogCalendrier2.cs" />
+    <Compile Include="Assets/Scripts/DialogDidief1.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexZoom.cs" />
     <Compile Include="Assets/Scripts/QuizManager.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark02.cs" />
@@ -159,6 +160,7 @@
     <Compile Include="Assets/Scripts/DialogTMS.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark03.cs" />
     <Compile Include="Assets/Scripts/HomeShowAccueil.cs" />
+    <Compile Include="Assets/Scripts/DialogChrisf1.cs" />
     <Compile Include="Assets/Scripts/DialogDidier2.cs" />
     <Compile Include="Assets/DialogueEditor/Assets/Scripts/Conversation.cs" />
     <Compile Include="Assets/Scripts/DialogOrdi.cs" />
